@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Support Bot</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding: 20px; background: #f4f4f4; }
+        #chat-box { width: 400px; background: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 20px; }
+        #messages { height: 300px; overflow-y: auto; border-bottom: 1px solid #ddd; margin-bottom: 10px; }
+        .bot-msg { color: #2c3e50; background: #e1f5fe; padding: 8px; border-radius: 5px; margin: 5px 0; }
+        .user-msg { color: #fff; background: #007bff; padding: 8px; border-radius: 5px; margin: 5px 0; text-align: right; }
+        button { background: #007bff; color: white; border: none; padding: 10px; cursor: pointer; border-radius: 4px; width: 100%; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <div id="chat-box">
+        <div id="messages">
+            <div class="bot-msg">Hello! How can I help you today?</div>
+        </div>
+        <div id="options">
+            <button onclick="handleChoice('1')">1. Track Package</button>
+            <button onclick="handleChoice('2')">2. Product Advice</button>
+            <button onclick="handleChoice('3')">3. Tech Support</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
